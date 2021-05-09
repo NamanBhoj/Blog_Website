@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') -%> <!--Adding Partials   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full post</title>
+</head>
+<body>
+    
+
+    <% for (i= 0 ; i < allpost.length ; i++) { %>
+        <h1><%= allpost[i].title %></h1>
+        <p><%= allpost[i].body %></p>
+        
+    <%}%>
+
+
+     <%- include('partials/footer') -%><!-- Adding footer partial -->
+</body>
+</html>

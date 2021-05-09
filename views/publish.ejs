@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/header') -%> <!--Adding Partials   -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Publish New Article</h1>
+    
+    <form action="/publish" method="post">
+
+        <div class="form-group">
+            <label for="">Title of the Post</label>
+            <input class="form-control" type="text" name="postTitle" id="">
+            <label for="">Content of the Post</label>
+            <textarea  class="form-control" name="postBody" id="" cols="30" rows="10"></textarea>
+           
+        </div>
+        <button class="btn btn-danger" type="submit">Submit</button>
+    
+    </form>
+    
+
+
+    <%- include('partials/footer') -%><!-- Adding footer partial -->
+</body>
+</html>
